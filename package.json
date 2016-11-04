@@ -1,0 +1,36 @@
+{
+  "name": "selenium-nodejs-tests",
+  "description": "Sample Testing Workflow with Selenium, Gulp, Mocha, and WebdriverIO",
+  "homepage": "http://dheerajkhs.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/drajk/selenium-nodejs-sample.git"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.18.2",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "mocha": "^3.1.2",
+    "should": "^11.1.1",
+    "webdriverio": "^4.3.0"
+  },
+  "devDependencies": {
+    "babel-register": "^6.18.0",
+    "connect": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-webdriver": "^2.0.2",
+    "selenium-standalone": "^5.8.0",
+    "serve-static": "^1.11.1",
+    "wdio-mocha-framework": "^0.5.0"
+  },
+  "scripts": {
+    "test_mocha": "mocha --compilers js:babel-core/register ./src/**/*.spec.js",
+    "test_wdio": "wdio wdio.conf.js",
+    "test": "gulp test"
+  },
+  "keywords": [],
+  "author": "dheeraj khushalani",
+  "license": "ISC"
+}
